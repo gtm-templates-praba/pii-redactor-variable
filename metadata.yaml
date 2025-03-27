@@ -2,5 +2,5 @@ homepage: 'https://codechilli.lk'
 documentation: 'https://github.com/gtm-templates-praba/pii-redactor-variable/blob/main/README.md'
 versions:
   # Latest version
-  - sha:
+  - sha: 93bae80ae4ae5dad6717c33e7b7993e5908fd943
     changeNotes: Initial release.
