@@ -1,6 +1,6 @@
 # Server-side GTM PII Redactor Variable Template
 
-This SGTM template variable replaces sensitive data (names, emails, address etc) with the string [*redacted*] from URLs. Choose `page_location`, `page_referrer`, or your custom input. Select predefined values or define your own.
+This SGTM template variable replaces sensitive data (names, emails, address etc) with the string `[*redacted*]` from URLs. Choose `page_location`, `page_referrer`, or your custom input. Select predefined values or define your own.
 
 ## Configuration Options
 
