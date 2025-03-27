@@ -51,6 +51,8 @@ https://gtm.localserver/?purpose=praba-test&src=test+page&loanAmount=1000&cname=
 
 ![PII Redactor Configuration](/screenshots/01.png)
 
+![SGTM Transformation](/screenshots/02.png)
+
 ## License
 
 [MIT License](LICENSE)
