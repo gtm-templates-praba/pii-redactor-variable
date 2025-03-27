@@ -1,6 +1,6 @@
 # Server-side GTM PII Redactor Variable Template
 
-This SGTM template variable replaces sensitive data (names, emails, address etc) with the string `[*redacted*]` from URLs. Choose `page_location`, `page_referrer`, or your custom input. Select predefined values or define your own.
+This SGTM template variable replaces sensitive data (names, emails, addresses, etc.) with the string `[*redacted*]` from URLs. Choose `page_location`, `page_referrer`, or your custom input. Select predefined values or define your own.
 
 ## Configuration Options
 
@@ -31,19 +31,25 @@ Each category redacts multiple related parameters:
 
 Add any additional parameters not covered by the predefined categories.
 
-## Example
+## Example Use Case
+
+Use this variable to remove PII from `page_location` & use it in SGTM Transformation to forward the redacted `page_location` to GA4.
 
 Original URL:
 
 ```
-https://example.com/checkout?product=shirt&email=user@example.com&name=John+Smith&creditcard=4111111111111111
+https://gtm.localserver/?purpose=praba-test&src=test+page&loanAmount=1000&cname=John+Doe&firstName=John&lastname=Doe&email=john.doe%40example.com&streetAddress=123+Main+St&city=New+York&state=NY&zipCode=10001&phoneNumber=1234567890&ctry=USA
 ```
 
-After processing (with email, name, and payment information selected for redaction):
+After processing:
 
 ```
-https://example.com/checkout?product=shirt&email=[*redacted*]&name=[*redacted*]&creditcard=[*redacted*]
+https://gtm.localserver/?purpose=praba-test&src=test+page&loanAmount=1000&cname=[*redacted*]&firstName=[*redacted*]&lastname=[*redacted*]&email=[*redacted*]&streetAddress=[*redacted*]&city=[*redacted*]&state=[*redacted*]&zipCode=[*redacted*]&phoneNumber=[*redacted*]&ctry=[*redacted*]
 ```
+
+### Screenshot
+
+![PII Redactor Configuration](/screenshots/01.png)
 
 ## License
 
