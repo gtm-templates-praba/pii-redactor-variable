@@ -11,6 +11,10 @@ ___INFO___
 {
   "type": "MACRO",
   "id": "cvt_temp_public_id",
+  "categories": [
+    "UTILITY",
+    "TAG_MANAGEMENT"
+  ],
   "version": 1,
   "securityGroups": [],
   "displayName": "PII Redactor",
